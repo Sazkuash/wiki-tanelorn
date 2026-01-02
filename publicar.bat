@@ -1,14 +1,15 @@
 @echo off
-echo --- GERANDO NOVOS ARQUIVOS DA WIKI ---
+echo --- 1. GERANDO ARQUIVOS DA WIKI ---
 python generator.py
 echo.
-echo --- SUBINDO CODIGO PARA O REPOSITORIO ---
+echo --- 2. ENVIANDO PARA O REPOSITORIO ---
 git add .
-git commit -m "Auto-update wiki"
+git commit -m "Auto-update: %date% %time%"
 git push origin main
 echo.
-echo --- PUBLICANDO SITE ONLINE ---
-mkdocs gh-deploy
+echo --- 3. PUBLICANDO SITE ONLINE ---
+mkdocs gh-deploy --force
 echo.
-echo ? PROCESSO CONCLUIDO! Seu site estara online em instantes.
+echo PRONTO! O site estara online em:
+echo https://Sazkuash.github.io/wiki-tanelorn/
 pause
