@@ -10,7 +10,7 @@ from collections import defaultdict
 # =========================
 
 def generate_mkdocs_config():
-    """Gera o arquivo de configuração mkdocs.yml com suporte a Cards e Design Premium"""
+    """Gera o arquivo mkdocs.yml com as extensões necessárias para Cards e Design"""
     content = """site_name: Tanelorn Chronicles Wiki
 site_url: https://Sazkuash.github.io/wiki-tanelorn/
 repo_url: https://github.com/Sazkuash/wiki-tanelorn
@@ -63,7 +63,7 @@ nav:
 """
     with open("mkdocs.yml", "w", encoding="utf-8") as f:
         f.write(content)
-    print("--- Configuração mkdocs.yml gerada com sucesso ---")
+    print("--- 0. mkdocs.yml gerado com sucesso ---")
 
 # =========================
 # LÓGICA DE CATEGORIAS
@@ -131,8 +131,7 @@ def write_file(path, lines):
 # =========================
 
 def generate():
-    # PASSO 0: Gerar Configurações
-    generate_mkdocs_config()
+    generate_mkdocs_config() # Garante a configuração visual correta
 
     print("--- 1. Carregando dados ---")
     mob_db = load_yaml("data/mob_db.yml")
@@ -172,10 +171,11 @@ def generate():
         item_page = [
             f"# {info.get('name')}",
             f'\n<div class="result" markdown>',
-            f"!!! abstract \"Descrição do Item (ID: {it_id})\"",
-            "    " + "\n    ".join(info.get('desc', [])) if info.get('desc') else "    *Sem descrição.*",
+            f"!!! abstract \"Descricao do Item (ID: {it_id})\"",
+            "    " + "\n    ".join(info.get('desc', [])) if info.get('desc') else "    *Sem descricao disponivel.*",
             f'</div>',
-            "\n## ?? Drop Table", "| Monstro | Chance |", "| :--- | :--- |",
+            "\n## :material-sword: Obtencao via Drop",
+            "| Monstro | Chance |", "| :--- | :--- |",
             *(item_drop_map[it_id] if item_drop_map[it_id] else ["| - | Especial |"])
         ]
         write_file(f"docs/items/{main_cat}/{sub_cat}/{it_id}.md", item_page)
@@ -185,9 +185,9 @@ def generate():
         if not m: continue
         m_page = [
             f"# {m['Name']} (ID: {m['Id']})",
-            f"!!! info \"Status\"",
+            f"!!! info \"Status Basicos\"",
             f"    HP: **{m.get('Hp')}** | Level: **{m.get('Level')}**",
-            "\n## ?? Drops", "| Item | ID | Rate |", "| :--- | :--- | :--- |"
+            "\n## :material-treasure-chest: Drops", "| Item | ID | Rate |", "| :--- | :--- | :--- |"
         ]
         for d in (m.get("Drops", []) + m.get("MvpDrops", [])):
             it_id = aegis_to_id.get(d["Item"].strip().strip('_').lower())
@@ -197,42 +197,47 @@ def generate():
                 m_page.append(f"| [{it_lua.get('name')}](../items/{m_cat}/{s_cat}/{it_id}.md) | {it_id} | {d['Rate']/100:.2f}% |")
         write_file(f"docs/monsters/{m['Id']}.md", m_page)
 
-    print("--- 4. Criando Índices Visuais ---")
+    # --- GERACAO DE INDICES VISUAIS ---
+    print("--- 4. Criando Indices Visuais ---")
     
-    # Home Docs
+    # Home Docs (index.md)
     write_file("docs/index.md", [
-        "# ?? Tanelorn Chronicles Wiki",
-        "Bem-vindo! Use os cards abaixo para navegar.",
+        "# Tanelorn Chronicles Wiki",
+        "Bem-vindo! Utilize os cards abaixo para navegar pelas categorias principais.",
         "\n<div class=\"grid cards\" markdown>",
-        "- :material-sword: __Itens__\n    ---\n    [Explorar Itens](./items/index.md)",
-        "- :material-ghost: __Bestiário__\n    ---\n    [Ver Monstros](./monsters/index.md)",
+        "-   :material-sword: __Itens__\n\n    Explore o banco de dados completo de equipamentos e consumiveis.\n\n    [:octicons-arrow-right-24: Acessar Itens](./items/index.md)",
+        "-   :material-ghost: __Bestiario__\n\n    Consulte status, tabelas de drop e localizacoes de todos os monstros.\n\n    [:octicons-arrow-right-24: Ver Monstros](./monsters/index.md)",
         "</div>"
     ])
 
-    # Indices de Itens
-    item_idx = ["# ?? Banco de Dados de Itens", "\n<div class=\"grid cards\" markdown>"]
+    # Indice Principal de Itens (Cards das categorias mae)
+    item_idx = ["# Banco de Dados de Itens", "Selecione uma categoria de equipamento.", "\n<div class=\"grid cards\" markdown>"]
     for mc in sorted(tree.keys()):
-        item_idx.append(f"- __{mc}__\n    ---\n    [:octicons-arrow-right-24: Ver Subcategorias]({mc}/index.md)")
+        item_idx.append(f"-   __{mc}__\n\n    Listagem geral de {mc}.\n\n    [:octicons-arrow-right-24: Ver Subcategorias]({mc}/index.md)")
         
-        # Subcategorias
-        sub_idx = [f"# {mc}", "\n<div class=\"grid cards\" markdown>"]
+        # Subcategorias (Cards das armas especificas/armaduras)
+        sub_idx = [f"# {mc}", f"Navegue pelas subcategorias de {mc}.", "\n<div class=\"grid cards\" markdown>"]
         for sc in sorted(tree[mc].keys()):
-            sub_idx.append(f"- __{sc}__\n    ---\n    [:octicons-arrow-right-24: Ver Lista]({sc}/index.md)")
+            sub_idx.append(f"-   __{sc}__\n\n    {len(tree[mc][sc])} itens encontrados nesta categoria.\n\n    [:octicons-arrow-right-24: Ver Lista]({sc}/index.md)")
             
-            # Lista Final
-            it_list = [f"# {sc}", "\n| ID | Nome |", "| :-- | :-- |"]
+            # Lista Final (Tabela simples para facilitar a busca)
+            it_list = [f"# Lista: {sc}", "\n| ID | Nome |", "| :--- | :--- |"]
             for iid in sorted(tree[mc][sc]):
-                it_list.append(f"| {iid} | [{lua_data.get(iid, {'name': iid})['name']}]({iid}.md) |")
+                it_info = lua_data.get(iid, {'name': f'Item {iid}'})
+                it_list.append(f"| {iid} | [{it_info.get('name')}]({iid}.md) |")
             write_file(f"docs/items/{mc}/{sc}/index.md", it_list)
+            
         sub_idx.append("</div>")
         write_file(f"docs/items/{mc}/index.md", sub_idx)
     item_idx.append("</div>")
     write_file("docs/items/index.md", item_idx)
 
-    # Indice Monstros
-    m_idx = ["# ?? Bestiário", "\n| Level | Nome | ID |", "| :---: | :--- | :---: |"]
+    # Indice Monstros (Tabela)
+    m_idx = ["# Bestiario Tanelorn", "\n| Level | Monstro | ID |", "| :---: | :--- | :---: |"]
     for m in sorted(mobs, key=lambda x: (int(str(x.get('Level', 0))) if x.get('Level') else 0, x['Id'])):
         m_idx.append(f"| {m.get('Level', 0)} | [{m['Name']}]({m['Id']}.md) | {m['Id']} |")
     write_file("docs/monsters/index.md", m_idx)
+
+    print("--- Wiki gerada com sucesso! ---")
 
 if __name__ == "__main__": generate()
