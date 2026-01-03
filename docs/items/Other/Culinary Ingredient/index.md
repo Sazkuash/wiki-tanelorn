@@ -1,8 +1,8 @@
-# Culinary Ingredient
+# Lista: Culinary Ingredient
 
-Items:
-
-- [Coconut Fruit](6263.md)
-- [Melon](6264.md)
-- [Pineapple](6265.md)
-- [Red Chile](7286.md)
+| ID | Nome |
+| :--- | :--- |
+| 6263 | [Coconut Fruit](6263.md) |
+| 6264 | [Melon](6264.md) |
+| 6265 | [Pineapple](6265.md) |
+| 7286 | [Red Chile](7286.md) |

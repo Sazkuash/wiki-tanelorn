@@ -1,50 +1,22 @@
-# Item Database
+# ?? Banco de Dados de Itens
 
-## Armor
-- [Armor](Armor/Armor/index.md)
-- [Garment and Cape](Armor/Garment and Cape/index.md)
-- [Shield](Armor/Shield/index.md)
-- [Shoes](Armor/Shoes/index.md)
-## Consumables
-- [Recovery](Consumables/Recovery/index.md)
-- [Support](Consumables/Support/index.md)
-- [Usable](Consumables/Usable/index.md)
-## Other
-- [Accessory](Other/Accessory/index.md)
-- [Arrow](Other/Arrow/index.md)
-- [Card](Other/Card/index.md)
-- [Collectible](Other/Collectible/index.md)
-- [Cooked Food](Other/Cooked Food/index.md)
-- [Cooking Tool](Other/Cooking Tool/index.md)
-- [Costume](Other/Costume/index.md)
-- [Culinary Ingredient](Other/Culinary Ingredient/index.md)
-- [Cute Pet Accessory](Other/Cute Pet Accessory/index.md)
-- [Essential](Other/Essential/index.md)
-- [Etc](Other/Etc/index.md)
-- [Forging Material](Other/Forging Material/index.md)
-- [Magic Scroll](Other/Magic Scroll/index.md)
-- [Pet Accessory](Other/Pet Accessory/index.md)
-- [Pet Food](Other/Pet Food/index.md)
-- [Quest](Other/Quest/index.md)
-- [Skill Requirement](Other/Skill Requirement/index.md)
-- [Status Booster](Other/Status Booster/index.md)
-- [Taming Item](Other/Taming Item/index.md)
-- [Tool](Other/Tool/index.md)
-- [Valuable](Other/Valuable/index.md)
-## Weapons
-- [Axe](Weapons/Axe/index.md)
-- [Bow](Weapons/Bow/index.md)
-- [Dagger](Weapons/Dagger/index.md)
-- [Katar](Weapons/Katar/index.md)
-- [Knuckle](Weapons/Knuckle/index.md)
-- [Mace](Weapons/Mace/index.md)
-- [Musical Instrument](Weapons/Musical Instrument/index.md)
-- [One-Handed Axe](Weapons/One-Handed Axe/index.md)
-- [One-Handed Spear](Weapons/One-Handed Spear/index.md)
-- [One-Handed Staff](Weapons/One-Handed Staff/index.md)
-- [One-Handed Sword](Weapons/One-Handed Sword/index.md)
-- [Two-Handed Axe](Weapons/Two-Handed Axe/index.md)
-- [Two-Handed Spear](Weapons/Two-Handed Spear/index.md)
-- [Two-Handed Staff](Weapons/Two-Handed Staff/index.md)
-- [Two-Handed Sword](Weapons/Two-Handed Sword/index.md)
-- [Whip](Weapons/Whip/index.md)
+<div class="grid cards" markdown>
+
+-   __Armor__
+    ---
+    Listagem de armor.
+    [:octicons-arrow-right-24: Ver Subcategorias](Armor/index.md)
+-   __Consumables__
+    ---
+    Listagem de consumables.
+    [:octicons-arrow-right-24: Ver Subcategorias](Consumables/index.md)
+-   __Other__
+    ---
+    Listagem de other.
+    [:octicons-arrow-right-24: Ver Subcategorias](Other/index.md)
+-   __Weapons__
+    ---
+    Listagem de weapons.
+    [:octicons-arrow-right-24: Ver Subcategorias](Weapons/index.md)
+
+</div>

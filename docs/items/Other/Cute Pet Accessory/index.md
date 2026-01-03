@@ -1,7 +1,7 @@
-# Cute Pet Accessory
+# Lista: Cute Pet Accessory
 
-Items:
-
-- [Pacifier](10004.md)
-- [Wig](10005.md)
-- [Punisher](10008.md)
+| ID | Nome |
+| :--- | :--- |
+| 10004 | [Pacifier](10004.md) |
+| 10005 | [Wig](10005.md) |
+| 10008 | [Punisher](10008.md) |
