@@ -1,4 +1,4 @@
-# Lista: Taming Item
+# Taming Item
 
 | ID | Nome |
 | :--- | :--- |

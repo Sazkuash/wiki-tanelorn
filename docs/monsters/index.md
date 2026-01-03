@@ -1,4 +1,4 @@
-# ?? Bestiario
+# Bestiario
 
 | Level | Monstro | ID |
 | :---: | :--- | :---: |

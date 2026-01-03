@@ -1,4 +1,4 @@
-# Lista: Dagger
+# Dagger
 
 | ID | Nome |
 | :--- | :--- |

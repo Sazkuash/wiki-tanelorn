@@ -1,4 +1,4 @@
-# Lista: Tool
+# Tool
 
 | ID | Nome |
 | :--- | :--- |

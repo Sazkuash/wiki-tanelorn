@@ -1,4 +1,4 @@
-# Lista: Two-Handed Axe
+# Two-Handed Axe
 
 | ID | Nome |
 | :--- | :--- |

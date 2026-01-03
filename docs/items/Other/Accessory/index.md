@@ -1,4 +1,4 @@
-# Lista: Accessory
+# Accessory
 
 | ID | Nome |
 | :--- | :--- |

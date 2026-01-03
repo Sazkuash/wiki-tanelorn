@@ -4,19 +4,18 @@
 
 -   __Armor__
     ---
-    54 itens encontrados.
-    [:octicons-arrow-right-24: Ver Lista](Armor/index.md)
+    [:octicons-arrow-right-24: Ver Lista de Armor](Armor/index.md)
+
 -   __Garment and Cape__
     ---
-    27 itens encontrados.
-    [:octicons-arrow-right-24: Ver Lista](Garment and Cape/index.md)
+    [:octicons-arrow-right-24: Ver Lista de Garment and Cape](Garment and Cape/index.md)
+
 -   __Shield__
     ---
-    24 itens encontrados.
-    [:octicons-arrow-right-24: Ver Lista](Shield/index.md)
+    [:octicons-arrow-right-24: Ver Lista de Shield](Shield/index.md)
+
 -   __Shoes__
     ---
-    18 itens encontrados.
-    [:octicons-arrow-right-24: Ver Lista](Shoes/index.md)
+    [:octicons-arrow-right-24: Ver Lista de Shoes](Shoes/index.md)
 
 </div>

@@ -1,4 +1,4 @@
-# Lista: Forging Material
+# Forging Material
 
 | ID | Nome |
 | :--- | :--- |

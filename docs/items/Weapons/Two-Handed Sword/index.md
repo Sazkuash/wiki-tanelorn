@@ -1,4 +1,4 @@
-# Lista: Two-Handed Sword
+# Two-Handed Sword
 
 | ID | Nome |
 | :--- | :--- |

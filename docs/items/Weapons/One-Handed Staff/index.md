@@ -1,4 +1,4 @@
-# Lista: One-Handed Staff
+# One-Handed Staff
 
 | ID | Nome |
 | :--- | :--- |

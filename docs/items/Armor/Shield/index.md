@@ -1,4 +1,4 @@
-# Lista: Shield
+# Shield
 
 | ID | Nome |
 | :--- | :--- |

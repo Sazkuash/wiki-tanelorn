@@ -1,4 +1,4 @@
-# Lista: Pet Food
+# Pet Food
 
 | ID | Nome |
 | :--- | :--- |

@@ -1,4 +1,4 @@
-# Lista: Quest
+# Quest
 
 | ID | Nome |
 | :--- | :--- |

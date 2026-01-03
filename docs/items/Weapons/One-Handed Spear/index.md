@@ -1,4 +1,4 @@
-# Lista: One-Handed Spear
+# One-Handed Spear
 
 | ID | Nome |
 | :--- | :--- |

@@ -1,4 +1,4 @@
-# Lista: Knuckle
+# Knuckle
 
 | ID | Nome |
 | :--- | :--- |

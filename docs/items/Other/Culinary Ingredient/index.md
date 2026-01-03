@@ -1,4 +1,4 @@
-# Lista: Culinary Ingredient
+# Culinary Ingredient
 
 | ID | Nome |
 | :--- | :--- |

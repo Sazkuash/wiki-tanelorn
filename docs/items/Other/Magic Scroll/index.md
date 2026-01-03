@@ -1,4 +1,4 @@
-# Lista: Magic Scroll
+# Magic Scroll
 
 | ID | Nome |
 | :--- | :--- |

@@ -1,4 +1,4 @@
-# Lista: Musical Instrument
+# Musical Instrument
 
 | ID | Nome |
 | :--- | :--- |

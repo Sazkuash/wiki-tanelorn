@@ -1,4 +1,4 @@
-# Lista: Costume
+# Costume
 
 | ID | Nome |
 | :--- | :--- |

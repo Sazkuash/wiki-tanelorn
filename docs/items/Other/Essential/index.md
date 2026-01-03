@@ -1,4 +1,4 @@
-# Lista: Essential
+# Essential
 
 | ID | Nome |
 | :--- | :--- |

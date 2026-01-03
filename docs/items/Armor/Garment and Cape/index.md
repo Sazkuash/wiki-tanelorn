@@ -1,4 +1,4 @@
-# Lista: Garment and Cape
+# Garment and Cape
 
 | ID | Nome |
 | :--- | :--- |

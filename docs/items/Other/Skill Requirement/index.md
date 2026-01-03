@@ -1,4 +1,4 @@
-# Lista: Skill Requirement
+# Skill Requirement
 
 | ID | Nome |
 | :--- | :--- |

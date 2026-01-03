@@ -1,4 +1,4 @@
-# Lista: Axe
+# Axe
 
 | ID | Nome |
 | :--- | :--- |

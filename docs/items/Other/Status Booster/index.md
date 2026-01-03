@@ -1,4 +1,4 @@
-# Lista: Status Booster
+# Status Booster
 
 | ID | Nome |
 | :--- | :--- |

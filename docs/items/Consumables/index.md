@@ -4,15 +4,14 @@
 
 -   __Recovery__
     ---
-    50 itens encontrados.
-    [:octicons-arrow-right-24: Ver Lista](Recovery/index.md)
+    [:octicons-arrow-right-24: Ver Lista de Recovery](Recovery/index.md)
+
 -   __Support__
     ---
-    7 itens encontrados.
-    [:octicons-arrow-right-24: Ver Lista](Support/index.md)
+    [:octicons-arrow-right-24: Ver Lista de Support](Support/index.md)
+
 -   __Usable__
     ---
-    4 itens encontrados.
-    [:octicons-arrow-right-24: Ver Lista](Usable/index.md)
+    [:octicons-arrow-right-24: Ver Lista de Usable](Usable/index.md)
 
 </div>

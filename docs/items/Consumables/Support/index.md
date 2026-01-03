@@ -1,4 +1,4 @@
-# Lista: Support
+# Support
 
 | ID | Nome |
 | :--- | :--- |

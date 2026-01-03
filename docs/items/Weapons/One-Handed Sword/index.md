@@ -1,4 +1,4 @@
-# Lista: One-Handed Sword
+# One-Handed Sword
 
 | ID | Nome |
 | :--- | :--- |

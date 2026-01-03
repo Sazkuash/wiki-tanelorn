@@ -1,4 +1,4 @@
-# Lista: Valuable
+# Valuable
 
 | ID | Nome |
 | :--- | :--- |

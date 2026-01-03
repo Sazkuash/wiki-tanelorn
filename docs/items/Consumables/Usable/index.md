@@ -1,4 +1,4 @@
-# Lista: Usable
+# Usable
 
 | ID | Nome |
 | :--- | :--- |

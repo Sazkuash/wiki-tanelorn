@@ -1,4 +1,4 @@
-# Lista: Cute Pet Accessory
+# Cute Pet Accessory
 
 | ID | Nome |
 | :--- | :--- |

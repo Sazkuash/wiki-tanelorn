@@ -1,4 +1,4 @@
-# Lista: Card
+# Card
 
 | ID | Nome |
 | :--- | :--- |

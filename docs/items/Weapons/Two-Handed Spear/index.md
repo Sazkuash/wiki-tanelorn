@@ -1,4 +1,4 @@
-# Lista: Two-Handed Spear
+# Two-Handed Spear
 
 | ID | Nome |
 | :--- | :--- |

@@ -1,4 +1,4 @@
-# Lista: Katar
+# Katar
 
 | ID | Nome |
 | :--- | :--- |

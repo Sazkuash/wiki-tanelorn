@@ -1,4 +1,4 @@
-# Lista: Cooked Food
+# Cooked Food
 
 | ID | Nome |
 | :--- | :--- |

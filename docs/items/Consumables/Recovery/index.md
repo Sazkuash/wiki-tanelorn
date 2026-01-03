@@ -1,4 +1,4 @@
-# Lista: Recovery
+# Recovery
 
 | ID | Nome |
 | :--- | :--- |

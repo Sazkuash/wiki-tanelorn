@@ -1,4 +1,4 @@
-# Lista: Shoes
+# Shoes
 
 | ID | Nome |
 | :--- | :--- |

@@ -1,4 +1,4 @@
-# Lista: Cooking Tool
+# Cooking Tool
 
 | ID | Nome |
 | :--- | :--- |

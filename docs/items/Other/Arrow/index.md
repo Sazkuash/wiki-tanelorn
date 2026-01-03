@@ -1,4 +1,4 @@
-# Lista: Arrow
+# Arrow
 
 | ID | Nome |
 | :--- | :--- |

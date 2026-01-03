@@ -1,4 +1,4 @@
-# Lista: Two-Handed Staff
+# Two-Handed Staff
 
 | ID | Nome |
 | :--- | :--- |

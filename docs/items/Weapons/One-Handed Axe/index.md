@@ -1,4 +1,4 @@
-# Lista: One-Handed Axe
+# One-Handed Axe
 
 | ID | Nome |
 | :--- | :--- |

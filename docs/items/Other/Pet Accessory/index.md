@@ -1,4 +1,4 @@
-# Lista: Pet Accessory
+# Pet Accessory
 
 | ID | Nome |
 | :--- | :--- |

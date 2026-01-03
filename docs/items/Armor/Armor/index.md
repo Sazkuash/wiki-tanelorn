@@ -1,4 +1,4 @@
-# Lista: Armor
+# Armor
 
 | ID | Nome |
 | :--- | :--- |

@@ -1,4 +1,4 @@
-# Lista: Collectible
+# Collectible
 
 | ID | Nome |
 | :--- | :--- |
